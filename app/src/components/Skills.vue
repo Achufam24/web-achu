@@ -1,5 +1,6 @@
 <template>
-<div  class="container-fluid">
+<transition name="fade" appear>
+   <div  class="container-fluid">
     <div class="container-fluid d-flex" id="row9">
         <div class="container-fluid" id="row6">
         <img src="@/assets/Group4.png" class="img-fluid" alt="">
@@ -15,6 +16,7 @@
     </div>
     </div>
 </div>
+</transition>
 </template>
 
 <script>
@@ -31,6 +33,32 @@ export default {
 }
  img{
     width: 250px !important;
+}
+.fade-enter-from{
+  opacity: 0;
+  transform: translateY(300px)
+}
+.fade-enter-to{
+  opacity: 1;
+  transform: translateY(0px)
+}
+.fade-enter-active{
+  transition: all 3s ease;
+}
+.fade-leave-from{
+ opacity: 1;
+  transform: translateY(0)
+}
+.fade-leave-to{
+opacity: 0;
+transform: translateY(300px)
+}
+.fade-leave-active{
+  transition: all 3s ease;
+}
+@keyframes wobble {
+  0% {transform: translateY(300px); opacity: 0}
+  50% {transform: translateY(0px); opacity: 1;}
 }
 @media only screen and (max-width: 700px){
     #row9{

@@ -1,6 +1,6 @@
 <template>
 <div>
-  <transition name="fade">
+  <transition name="fade" appear>
   <div v-if="showP" style="margin-top:6rem;">
     <h3>What i am working on</h3>
     <p>My Personal Project with Vuejs,boostrap,vuex</p>
@@ -22,7 +22,7 @@
 </div>
 </div>
 </transition>
-bu
+<button @click="toggleP">toggle</button>
 </div>
 </template>
 
@@ -36,7 +36,7 @@ data() {
 },
 methods: {
   toggleP(){
-    this.showP=true
+    this.showP= !this.showP
   }
 },
 }
@@ -48,21 +48,29 @@ methods: {
 <style scoped>
 .fade-enter-from{
   opacity: 0;
+  transform: translateY(-300px)
 }
 .fade-enter-to{
   opacity: 1;
+  transform: translateY(0px)
 }
 .fade-enter-active{
-  transition: all 10s ease;
+  transition: all 3s ease;
 }
 .fade-leave-from{
  opacity: 1;
+  transform: translateY(0)
 }
 .fade-leave-to{
 opacity: 0;
+transform: translateY(-300px)
 }
 .fade-leave-active{
-  transition: all 10s ease;
+  transition: all 3s ease;
+}
+@keyframes wobble {
+  0% {transform: translateY(-300px); opacity: 0}
+  50% {transform: translateY(0px); opacity: 1;}
 }
 .row3{
     height: auto;

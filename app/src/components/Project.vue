@@ -1,5 +1,6 @@
 <template>
-<div style="margin-top:6rem;">
+<transition name="fade" appear>
+  <div ref="box" class="box" style="margin-top:6rem;">
     <h3>My Projects</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae faci</p>
      <div id="C4" class="row3" style="margin-top:3rem;">
@@ -19,12 +20,50 @@
   </div>
 </div>
 </div>
+</transition>
 </template>
 
 <script>
+import gsap from 'gsap'
+
 export default {
-name:'Project'
-}
+name:'Project',
+
+ mounted: function() {
+    this.scrollAnimation();
+  },
+  methods: {
+    scrollAnimation() {
+      gsap.timeline({
+      scrollTrigger: {
+        
+        trigger: ".box",
+        start: "center center",
+        end: "bottom top",
+        markers: true,
+        scrub: true,
+        pin: true,
+      }
+    })
+    .from(".text1", { x : innerWidth * 1, opacity: 0 })
+    .from(".text2", { x : innerWidth * 1, opacity: 0 })
+
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: ".box",
+        start: "center center",
+        end: "bottom top",
+        markers: true,
+        scrub: true,
+        pin: true,
+      }
+    })
+    .from(".text4", { x : innerWidth * 1, opacity: 0 })
+    .from(".text5", { x : innerWidth * 1, opacity: 0 })
+    }
+  }
+
+  }
 </script>
 
 <style scoped>

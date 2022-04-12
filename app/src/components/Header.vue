@@ -22,7 +22,8 @@
   </div> 
  </div>
 </nav>
-<div id="profile" style="margin-top:8em;">
+<transition name="fade" appear>
+    <div id="profile" style="margin-top:8em;">
     <div class="row2" style="margin-left:2rem">
         <h5 class="col-sm-3" style="text-align:center; font-size:2rem;">Hy! I Am <br><span id="name-text">Agbama Achu-ulim</span></h5>
     <p class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor velit vulputate viverra purus. Neque a, s</p>
@@ -30,6 +31,8 @@
     </div>
     <div><img src="@/assets/profile.png" class="img-fluid" alt="pix"></div>
 </div>
+</transition>
+
 </header>
     </div>
 </template>
@@ -84,6 +87,32 @@ button{
 }
 .navbar-brand{
     font-family: 'Rubik Moonrocks', cursive;
+}
+.fade-enter-from{
+  opacity: 0;
+  transform: translateX(-60px)
+}
+.fade-enter-to{
+  opacity: 1;
+  transform: translateX(0px)
+}
+.fade-enter-active{
+  transition: all 0.1s ease;
+}
+.fade-leave-from{
+ opacity: 1;
+  transform: translateX(0)
+}
+.fade-leave-to{
+opacity: 0;
+transform: translateX(-60px)
+}
+.fade-leave-active{
+  transition: all 0.1s ease;
+}
+@keyframes wobble {
+  0% {transform: translateX(-300px); opacity: 0}
+  90% {transform: translateX(0px); opacity: 1;}
 }
 @media only screen and (max-width: 700px){
     #profile{

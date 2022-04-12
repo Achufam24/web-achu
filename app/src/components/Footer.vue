@@ -5,7 +5,8 @@
             <div>
                 <p>Living, learning,leveling up one day at a time.</p>
             </div>
-            <div class="icons">
+            <transition name="fade" appear>
+                  <div class="icons">
            <a href="https://www.facebook.com/achu.agbama.9/"><i class="bi bi-facebook"></i></a> 
            <a href="https://www.whatsapp.com/"><i class="bi bi-whatsapp"></i></a> 
            <a href="https://twitter.com/agbama_achu"><i class="bi bi-twitter"></i></a> 
@@ -13,6 +14,7 @@
            <a href="https://www.linkedin.com/in/achu-agbama/"><i class="bi bi-linkedin"></i></a> 
            <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
             </div>
+            </transition>
         </div>
     </div>
 </template>

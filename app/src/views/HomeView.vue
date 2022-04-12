@@ -17,6 +17,7 @@ import Project from '@/components/Project.vue'
 import Services from '@/components/Services.vue'
 import Working from '@/components/Working.vue'
 import Footer from '@/components/Footer.vue'
+import gsap from 'gsap'
 
 export default {
   name: 'Home',
