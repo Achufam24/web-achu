@@ -22,7 +22,7 @@
 </div>
 </div>
 </transition>
-<button @click="toggleP">toggle</button>
+<button @click="toggleP" style="margin-top:2em;">toggle</button>
 </div>
 </template>
 
