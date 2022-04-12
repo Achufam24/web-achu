@@ -7,10 +7,10 @@
 <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark">
  <div class="container">
  	 <a class="navbar-brand" href="#" style="font-family: 'Rubik Bubbles', cursive;">Achu<span style="color: #FF9430; font-size:20px;">.</span></a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+  <button @click="toggleNav" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
       <span class="navbar-toggler-icon"></span>
     </button>
-  <div class="collapse navbar-collapse" id="main_nav">
+  <div v-show="showNav" class="collapse navbar-collapse" id="main_nav">
 	<ul class="navbar-nav ms-auto">
 		<li class="nav-item"><a class="nav-link" href="#">Home </a></li>
         <li class="nav-item"><a class="nav-link" href="#">About</a></li>
@@ -39,7 +39,17 @@
 
 <script>
 export default {
-name:'Header'
+name:'Header',
+data() {
+    return {
+        showNav:true
+    }
+},
+methods: {
+    toggleNav(){
+        this.showNav = !this.showNav
+    }
+},
 }
 </script>
 
