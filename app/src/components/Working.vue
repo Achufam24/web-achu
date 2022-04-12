@@ -31,7 +31,7 @@ export default {
 name:'Working',
 data() {
   return {
-    showP:false
+    showP:true
   }
 },
 methods: {
