@@ -7,7 +7,7 @@
 <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="position:fixed; top:0 !important;">
  <div class="container">
  	 <a class="navbar-brand" href="#" style="font-family: 'Rubik Bubbles', cursive;">Achu<span style="color: #FF9430; font-size:20px;">.</span></a>
-  <button @click="toggleNav" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button @click="toggleNav" class="navbar-toggler rotate" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   <div v-show="showNav" class="collapse navbar-collapse" id="main_nav">
