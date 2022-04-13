@@ -4,10 +4,10 @@
 <div class="bg-warning py-2" style="background: #FF9430 !important;"> 
  Welcome to my Portfolio site! 
 </div>
-<nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark">
+<nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark" style="position:fixed; top:0 !important;">
  <div class="container">
  	 <a class="navbar-brand" href="#" style="font-family: 'Rubik Bubbles', cursive;">Achu<span style="color: #FF9430; font-size:20px;">.</span></a>
-  <button @click="toggleNav" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+  <button @click="toggleNav" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   <div v-show="showNav" class="collapse navbar-collapse" id="main_nav">
@@ -18,12 +18,12 @@
     <li class="nav-item"><a class="nav-link" href="#"> Works</a></li>
     <li class="nav-item"><a class="nav-link" href="#"> Services</a></li>
 	</ul>
-    <router-link to="/Contact" style="border:2px solid #FF9430; background:transparent; color:#fff;">Contact us</router-link>
+    <router-link to="/Contact" style="border:2px solid #FF9430; background:transparent; color:#fff; text-decoration:none; padding:5px;">Contact us</router-link>
   </div> 
  </div>
 </nav>
 <transition name="fade" appear>
-    <div id="profile" style="margin-top:8em;">
+    <div id="profile" style="margin-top:8em;" class="rotate">
     <div class="row2" style="margin-left:2rem">
         <h5 class="col-sm-3" style="text-align:center; font-size:2rem;">Hy! I Am <br><span id="name-text">Agbama Achu-ulim</span></h5>
     <p class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor velit vulputate viverra purus. Neque a, s</p>
@@ -45,11 +45,11 @@ data() {
         showNav:true
     }
 },
-methods: {
+/*methods: {
     toggleNav(){
         this.showNav = !this.showNav
     }
-},
+},*/
 }
 </script>
 
@@ -95,6 +95,16 @@ button{
     outline: none;
     border: none;
 }
+ .navbar-toggler,.navbar-toggler-icon{
+        border: none;
+    }
+ button:focus,button:active {
+   box-shadow: none !important;
+   color: goldenrod !important;
+    }
+    /*span:active{
+    opacity: 0;
+}*/
 .navbar-brand{
     font-family: 'Rubik Moonrocks', cursive;
 }

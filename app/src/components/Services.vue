@@ -1,6 +1,6 @@
 <template>
 <transition name="fade" appear>
-    <div class="row4">
+    <div class="row4 rotate">
         <h3 style="text-align:left;">Teaching My<br><span style="color:blue;">Superpower</span></h3>
         <div class="container-fluid" id="row4" style="display:flex;">
             <blockquote class="col-sm-6"><span class="quote">&ldquo;</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate augue dolor dolor faucibus sapien sed sodales. Netus sit aenean iaculis eget elit ut parturient. Lectus sodales vitae augue congue diam, amet in tincidunt. Lectus nunc nulla placerat tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate augue dolor dolor faucibus sapien sed sodales. Netus sit aenean iaculis eget elit ut parturient. Lectus sodales vitae augue congue diam, amet in tincidunt. <span class="quote">&bdquo;</span></blockquote>
@@ -62,7 +62,6 @@ transform: translateY(300px)
   50% {transform: translateY(0px); opacity: 1;}
 }
 @media only screen and (max-width: 700px){
-    
     .row4{
         
         margin: 0.5rem;

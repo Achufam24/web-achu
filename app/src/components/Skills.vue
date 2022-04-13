@@ -1,6 +1,6 @@
 <template>
 <transition name="fade" appear>
-   <div  class="container-fluid">
+   <div  class="container-fluid rotate">
     <div class="container-fluid d-flex" id="row9">
         <div class="container-fluid" id="row6">
         <img src="@/assets/Group4.png" class="img-fluid" alt="">

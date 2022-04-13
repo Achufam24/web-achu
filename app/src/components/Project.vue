@@ -1,6 +1,6 @@
 <template>
 <transition name="fade" appear>
-  <div ref="box" class="box" style="margin-top:6rem;">
+  <div ref="box" class="box rotate" style="margin-top:6rem;">
     <h3>My Projects</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae faci</p>
      <div id="C4" class="row3" style="margin-top:3rem;">

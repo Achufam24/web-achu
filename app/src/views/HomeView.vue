@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div>
     <Header/>
     <Skills id="section-one"/>
     <Project id="section-two"/>
@@ -31,3 +31,18 @@ export default {
   }
 }
 </script>
+
+<style>
+.rotate {
+  animation: rotation 1s  linear;
+  animation-delay: 0s;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+</style>
