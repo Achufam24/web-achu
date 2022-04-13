@@ -22,7 +22,7 @@
 </div>
 </div>
 </transition>
-<button @click="toggleP" style="margin-top:2em;">toggle</button>
+<button @click="toggleP" style="margin-top:2em;">Close Tab</button>
 </div>
 </template>
 
