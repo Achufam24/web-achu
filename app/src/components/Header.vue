@@ -12,11 +12,11 @@
     </button>
   <div v-show="showNav" class="collapse navbar-collapse" id="main_nav">
 	<ul class="navbar-nav ms-auto">
-		<li class="nav-item"><a class="nav-link" href="#">Home </a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-		<li class="nav-item"><a class="nav-link" href="#">Resume </a></li>
-    <li class="nav-item"><a class="nav-link" href="#"> Works</a></li>
-    <li class="nav-item"><a class="nav-link" href="#"> Services</a></li>
+		<li class="nav-item"><a class="nav-link" href="">Home </a></li>
+        <li class="nav-item"><a class="nav-link" href="">About</a></li>
+		<li class="nav-item"><a class="nav-link" href="#section-three">Resume </a></li>
+    <li class="nav-item"><a class="nav-link" href=""> Works</a></li>
+    <li class="nav-item"><a class="nav-link" href=""> Services</a></li>
 	</ul>
     <router-link to="/Contact" style="border:2px solid #FF9430; background:transparent; color:#fff; text-decoration:none; padding:5px;">Contact us</router-link>
   </div> 

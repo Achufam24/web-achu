@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main">
     <Header/>
     <Skills id="section-one"/>
     <Project id="section-two"/>
@@ -33,7 +33,10 @@ export default {
 </script>
 
 <style>
-.rotate {
+.main {
+  scroll-behavior: smooth;
+}
+/*.rotate {
   animation: rotation 1s  linear;
   animation-delay: 0s;
 }
@@ -44,5 +47,5 @@ export default {
   to {
     transform: rotate(359deg);
   }
-}
+}*/
 </style>

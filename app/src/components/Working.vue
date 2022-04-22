@@ -1,7 +1,7 @@
 <template>
 <div>
   <transition name="fade" appear>
-  <div v-if="showP" style="margin-top:6rem;" class="rotate">
+  <div v-if="showP" style="margin-top:6rem;">
     <h3>What i am working on</h3>
     <p>My Personal Project with Vuejs,boostrap,vuex</p>
      <div id="C4" class="row3" style="margin-top:3rem;">
